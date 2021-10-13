@@ -13,7 +13,7 @@ root.post("/fibonacci", (req, res) => {
         res.json("Error!, Debe ingresar un numero valido");
     } else {
         const elemntosFibo = fibonacci(n);
-        res.render('elementosFibo', { elemntosFibo });
+        res.json(elemntosFibo);
     }
 });
 
