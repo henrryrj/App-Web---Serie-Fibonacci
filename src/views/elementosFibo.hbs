@@ -1,0 +1,23 @@
+<div class="card-header">
+  <h2>Elementos Fibonacci</h2>
+</div>
+<div class="card-body">
+  <div class="table-responsive col-lg-12">
+    <table class="table table-striped">
+      <head class="thead-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Elementos</th>
+        </tr>
+      </head>
+      <body>
+        {{#each elemntosFibo}}
+          <tr>
+            <th scope="row">{{math @index "+" 1}}</th>
+            <td>{{this}}</td>
+        </tr>
+        {{/each}}
+      </body>
+    </table>
+  </div>
+</div>
